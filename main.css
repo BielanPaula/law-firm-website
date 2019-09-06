@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+    margin: auto;
+}
+
+.text {
+    margin-left: 20%;
+}
+
+/* BACKGROUND */
+.greeting,
+.introduction,
+.strengths {
+    background: white;
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+}
+
+.fields,
+.contact {
+    background: rgb(51, 51, 51);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    display: flex;
+}   
+
+/* NAVIGATION */
+.navigation {
+    background-color: aqua;
+    display:flex;
+    flex-direction: column;
+    height: 462px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 72px;
+}
+.navigation__main {
+    display:flex;
+    margin-left: 40.61%;
+    margin-top: 0;
+    margin-bottom: 0;
+    background-color: aqua;
+}
+.navigation__text {
+    font-family: "Avenir - Black";
+    font-size: 14px;
+    font-weight: 400;
+    background-color: aqua;
+    margin-left: 22.5px;
+    white-space: nowrap;
+}
+.navigation__number {
+    font-family: "Avenir - Black";
+    font-size: 60px;
+    font-weight: 400;
+    line-height: 60.96px;
+}
+.navigation__point {
+    border-radius: 50%;
+    height: 15px;
+    width: 15px;
+}
+.navigation__line {
+    height: 100px;
+    width: 3px;
+}
+.navigation__point-white {
+    background-color: white;
+}
+.navigation__point-gray {
+    background-color: rgb(51,51,51);
+}
+.navigation__point-gray45 {
+    background-color: rgb(115, 115, 115);    
+}
+.navigation__point-lightgray {
+    background-color: rgb(230, 230, 230);  
+}
+.navigation__line-white {
+    background-color: white;
+}
+.navigation__line-gray {
+    background-color: rgb(51,51,51);
+}
+.navigation__number-white {
+    color: white;
+}
+.navigation__number-gray{
+    color: rgb(51,51,51);
+}
+.navigation__text-white {
+    color: white;
+}
+.navigation__text-gray {
+    color: rgb(51,51,51);
+}
