@@ -3,38 +3,13 @@
     margin: auto;
 }
 
-.text {
-    margin-left: 20%;
-}
-
-/* BACKGROUND */
-.greeting,
-.introduction,
-.strengths {
-    background: white;
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    display: flex;
-}
-
-.fields,
-.contact {
-    background: rgb(51, 51, 51);
-    height: 100vh;
-    width: 100vw;
-    background-size: cover;
-    display: flex;
-}   
-
 /* NAVIGATION */
 .navigation {
-    background-color: aqua;
     display:flex;
     flex-direction: column;
     height: 462px;
-    margin-left: 0;
-    margin-right: 0;
+    margin-left: 49px;
+    margin-right: 140px;
     width: 72px;
 }
 .navigation__main {
@@ -42,15 +17,16 @@
     margin-left: 40.61%;
     margin-top: 0;
     margin-bottom: 0;
-    background-color: aqua;
 }
 .navigation__text {
-    font-family: "Avenir - Black";
     font-size: 14px;
     font-weight: 400;
-    background-color: aqua;
     margin-left: 22.5px;
+    width: 111px;
     white-space: nowrap;
+    font-family: nunito, sans-serif;
+    font-style: normal;
+    letter-spacing: 1.4px;
 }
 .navigation__number {
     font-family: "Avenir - Black";
@@ -98,44 +74,27 @@
     color: rgb(51,51,51);
 }
 
-/* TEXT */
+/* text */
+.text {
+    margin-top: 126px;
+    margin-left: 375px;
+    position: absolute;
+}
+
 /* header */
-.greeting__header {
-    font-family: "Myriad Pro";
-    font-size: 60px;
-    font-weight: 400;
-    line-height: 56.26px;
-}
-.greeting__name {
-    font-family: "Myriad Pro - Semibold";
-    font-weight: 600;
-    letter-spacing: 32.51px;
-}
-.greeting__surname {
-    font-family: "Myriad Pro";
-    font-weight: 400;
-    letter-spacing: 20.8px;
-}
 .header {
     font-family: "Avenir - Black";
     font-size: 42px;
     font-weight: 400;
     line-height: 60.96px;
 }
-.fields__header,
-.contact__header {
-    color: rgb(247, 247, 247);
-}
 
-/* line */
-.greeting__line{
-    height: 5px;
-    width: 282px;
-    background-color: black;
-}
+/* header line */
 .line {
     width: 400px;
     height: 3px;
+    margin-left: 0;
+    margin-top: 10px;
 }
 .line__white {
     background-color: white;
@@ -144,12 +103,408 @@
     background-color: black;
 }
 
-/* content */
+/* strengths fields*/
+.box {
+    display:flex;
+    flex-direction: column;
+    width: 10vw;
+    height: 40vh;
+    border-style: dotted;
+    border-color: rgb(255, 9, 50);
+}
+.box__line {
+    width: 75px;
+    height: 1px;
+    background-color: rgb(179, 179, 179);
+}
+
+/* BACKGROUND */
+.greeting,
+.introduction {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+
+.fields,
+.contact {
+    background: rgb(51, 51, 51);
+    height: 100vh;
+    /* width: 100%; */
+    background-size: cover;
+    display: flex;
+    overflow-x: hidden;
+}   
+.footer {    
+    background-color: rgb(05, 05, 05);
+    overflow-x: hidden;
+}
+
+
+/* GREETING */
+.greeting__background {
+    position: absolute;
+    align-self: flex-end;
+    z-index: -1;
+    height: 100vh;
+    width: auto;
+    overflow-x: hidden;
+}
+.greeting__logo {
+    position: absolute;
+    margin-left: 374px;
+    margin-top: 37px;
+    margin-bottom: 141px;
+    width: 97px;
+    height: 69px;
+}
+.greeting__logo-big {
+    position: absolute;
+    align-self: flex-end;
+    margin-left: 662px;
+    width: 594px;
+    height: 412px;
+}
+.greeting__scroll {
+    position: absolute;
+    align-self: flex-end;
+    margin-left: 948px;
+    width: 25px;
+    height: 39px;
+}
+.greeting__photo {
+    position: absolute;
+    align-self: flex-end;
+    margin-left: 1040px;
+    width: 629px;
+    height: 674px;
+}
+.greeting__text {    
+    margin-top: 247px;
+    margin-left: 368px;    
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.greeting__header {
+    font-family: schnebel-sans-me, sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 400;
+    text-transform: uppercase;
+}
+.greeting__name {
+    font-family: schnebel-sans-me, sans-serif;
+    font-style: normal;
+    font-weight: 600;
+    letter-spacing: 32.51px;
+}
+.greeting__surname {
+    font-family: schnebel-sans-me, sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    letter-spacing: 20.8px;
+}
+.greeting__line{
+    width: 282px;
+    height: 5px;
+    background-color: black;
+    margin-top: 55px;
+    margin-left: 0;
+    margin-bottom: 55px;
+    margin-top: 38px;
+    background-color: black;
+}
 .greeting__paragraph {
-    font-family: "Myriad Pro";
+    font-family: schnebel-sans-me, sans-serif;
+    font-style: normal;
     font-size: 25px;
     font-weight: 400;
     line-height: 30.74px;
     width: 670px;
     height: 178px;
+    margin-left: 0;
+    text-align: justify;
+}
+.phone {
+    position: absolute;
+    margin-top: 137px;
+    display: flex;
+    right: 0;
+    font-family: nunito, sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+.phone__shape {
+    position: absolute;
+}
+.phone__number {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 200px;
+    width: 202px;
+    color: #ffffff;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 95.17px;
+}
+
+
+/* INTRODUCTION */
+.introduction__text {
+    width: 479px;
+    text-align: justify;
+}
+.introduction__paragraph {    
+    margin-top: 104px;
+}
+
+
+/* FIELDS */
+.fields__text {
+    margin-top: 126px;
+    margin-left: 375px;
+    position: absolute;
+}
+.fields__header {
+    font-family: "Avenir - Black";
+    font-size: 42px;
+    font-weight: 400;
+    line-height: 60.96px;
+    color: rgb(247, 247, 247);
+}
+.fields__line {
+    width: 400px;
+    height: 3px;
+    margin-left: 0;
+    margin-top: 10px;
+}
+.fields__content {
+    margin-top: 138px;    
+    position: absolute;
+    list-style: none;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* padding: 0; */
+    /* justify-content: space-between; */
+    width: 80vw;
+    /* height: 40vh; */
+    background-color: aqua;
+    padding: 0;
+}
+        .box1 {
+            display:flex;
+            flex-direction: column;
+            width: 10vw;
+            height: 40vh;
+            border-style: dotted;
+            border-color: rgb(255, 9, 50);
+           
+        }
+        .fields__box {
+            background-color: red;
+            width: auto;
+            display:flex;
+            /* flex-direction: row; */
+            flex-wrap: wrap;
+        }
+
+        .fields__icon {
+            width: 249px;
+            height: 249px;
+            /* width: 12vw; */
+            background-color: darkgreen;
+        }
+        .fields__name {
+            /* width: 104px;
+            height: 42px; */
+            color: rgb(250, 250, 250);
+            font-family: "Myriad Pro - Semibold";
+            font-size: 19px;
+            font-weight: 400;
+            line-height: 29.2px;
+            letter-spacing: 4.75px;
+            text-align: center;
+            background-color: orange; 
+        }
+        .box__line1 {
+            width: 75px;
+            height: 1px;
+            background-color: rgb(179, 179, 179);
+        }
+
+
+
+
+
+
+/* STRENGTHS */
+.strengths {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
+.strengths__mocne {
+    margin-top: 120px;
+}
+.strengths__text {
+    margin-top: 120px;
+}
+.strengths__header {
+    color: #333333;
+    font-family: 'Nunito', sans-serif;
+    font-size: 42px;
+    line-height: 60.96px;
+    text-transform: uppercase;
+    letter-spacing: 16.8px;
+}
+.strengths__line {
+    width: 400px;
+    height: 3px;
+    background-color: #b3b3b3;
+    margin-left: 0;
+    margin-top: 20px;
+    margin-bottom: 80px;
+}
+.strengths__content {
+    display: flex;
+    flex-wrap: wrap;
+    height: 472px;
+    padding-left: 0;
+    justify-content: center;
+}
+.strengths__box {
+    width: 231.3px;
+    margin: 0 50px;
+    list-style: none;
+    text-align: center;
+}
+.strengths__hand {
+    margin-bottom: 75px;
+    margin-top: 50px;
+}
+.strengths__star {
+    margin-bottom: 89px;
+    margin-top: 50px;
+}
+.strengths__light {
+    margin-bottom: 65px;
+    margin-top: 40px;
+}
+.strengths__arrow {
+    margin-bottom: 61px;
+    margin-top: 50px;
+}
+.strengths__name {
+    text-align: center;
+    margin-bottom: 0;
+    font-size: 19px;
+    font-weight: 400;
+    line-height: 29.2px;
+    letter-spacing: 4.75px;    
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+}
+.strengths__lines {
+    width: 75px;
+    height: 1px;
+    background-color: #158483;
+    margin-top: 70px;
+}
+.arrow__lines {
+    margin-top: 40px;
+}
+.strengths__paragraph {
+    color: #999999;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: 0.4px;    
+}
+.hand__paragraph,
+.star__paragraph,
+.light__paragraph {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 87px;
+}
+.arrow__paragraph {
+    text-align: center;
+    padding-top: 0;
+    margin-top: 90px;    
+}
+.strengths__mocne {
+    position: absolute;
+    z-index: -1;
+    display: flex;
+    right: 0;
+}
+
+
+/* CONTACT */
+.contact__content {
+    height: 430px;
+    display:flex;
+    flex-direction: column;
+    margin-top: 119px;
+    color: rgb(153, 153, 153);
+    background-color: blueviolet;
+}
+.contact__box {
+    display:flex;
+    height: 33%;
+    width: 100%;
+    border-style: dotted;
+    border-color: rgb(255, 9, 50);
+}
+.contact__icon {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: black;
+}
+.contact__data {
+    /* margin-left: 0; */
+    /* margin-right: 0; */
+    display: flex;
+    /* position: absolute; */
+    flex-direction: column;
+    background-color: yellow;
+}
+.contact__paragraph {
+    /* margin-left: 0; */
+    font-size: 25px;
+    letter-spacing: 0.8px;
+    margin-left: 100px;
+    background-color: green;
+}
+.contact__paragraph-big {
+    /* margin-left: 0; */
+    font-weight: 700;
+}
+.contact__header {
+    color: rgb(247, 247, 247);
+}
+
+/* FOOTER */
+.footer__content {
+    width: 100vw;
+    padding: 20px 115px 20px 115px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: rgb(70, 70, 70);
+    font-size: 15px;
+    letter-spacing: 0.38px;
+}
+.footer__text,
+.footer__logo {
+    margin: 0;
+}
+.footer__name {
+    color: rgb(125, 125, 125);
 }

@@ -1,0 +1,101 @@
+
+@media screen and (max-width: 1605px) {
+  .strengths {
+    height: 1500px;
+    overflow-x: hidden;
+  }
+}
+
+@media screen and (max-width: 1120px) {
+    .navigation {
+      visibility: hidden;
+    }    
+    .greeting__text {  
+      margin-left: 52px;
+    }  
+    .greeting__logo {  
+      margin-left: 52px;
+      width: 36px;
+      height: 27px;
+    } 
+    .greeting__paragraph {
+      font-size: 13px;
+      line-height: 18.45px;
+      width: 299px;
+      height: 124px;
+      letter-spacing: 0.36px;
+    } 
+    .greeting__header {
+      width: 364px;
+      height: 25px;
+      font-size: 36px;
+      line-height: 33.76px;
+      letter-spacing: 32.51px;
+    }
+    .greeting__name {
+      letter-spacing: 32.51px;
+    }
+    .greeting__surname {
+      letter-spacing: 20.8px;
+    }
+    .greeting__line {
+      width: 169px;
+      height: 3px;
+    }
+    .strengths__text {
+      margin-left: 52px;
+      position: absolute;
+    }
+}
+
+
+@media screen and (max-width: 730px) {
+  .navigation,
+  .navigation__point,
+  .navigation__number,
+  .navigation__text,
+  .navig__line {
+    margin: 0;
+  }
+  .strengths {
+    overflow-y: hidden;
+    height: 2600px;
+  }
+}
+
+
+@media screen and (max-width: 322px) {
+  .strengths {
+    overflow-y: hidden;
+    height: 1725px;
+  }
+  .strengths__text {
+    margin-top: 65px;
+    margin-right: 22px;
+    margin-bottom: 10px;
+  }
+  .strengths__header {
+    font-size: 22px;
+    letter-spacing: 17.6px;
+    line-height: 30.48px;
+  }
+  .strengths__line {
+    width: 170px;
+    height: 1px;
+  }
+  .strengths__box {
+    margin-bottom: 64px;
+    margin-left: 0;
+    margin-right: 0;
+    width: 100%;
+  }
+  .strengths__icon {
+    margin-top: 0;
+    margin-bottom: 35px;
+  }
+  .strengths__paragraph {
+    font-size: 17px;
+    letter-spacing: 0.34px;
+    margin-top: 33px;
+  }
+}
