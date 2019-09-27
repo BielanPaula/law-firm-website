@@ -343,61 +343,53 @@
 .contact {
     background: rgb(51, 51, 51);
     height: 100vh;
-    /* width: 100%; */
     background-size: cover;
     display: flex;
     overflow-x: hidden;
-}   
-.contact__content {
-    height: 430px;
-    display:flex;
-    flex-direction: column;
-    margin-top: 119px;
-    color: rgb(153, 153, 153);
-    background-color: blueviolet;
+}
+.contact__text {
+    width: 400px;
+    margin-left: 177px;
+    margin-right: 141px;
+}
+.contact__line{
+    background-color: rgb(153, 153, 153);
+    margin-bottom: 129px;
 }
 .contact__box {
-    display:flex;
-    height: 33%;
-    width: 100%;
-    border-style: dotted;
-    border-color: rgb(255, 9, 50);
+    display: flex;
+    margin-bottom: 70px;
+}
+.contact__data {
+    margin-left: 0;
 }
 .contact__icon {
     margin-left: 0;
-    margin-right: 0;
-    background-color: black;
+    margin-right: 0; 
 }
-.contact__data {
-    /* margin-left: 0; */
-    /* margin-right: 0; */
-    display: flex;
-    /* position: absolute; */
-    flex-direction: column;
-    background-color: yellow;
+.contact__envelope {
+    margin-right: 49px;
+}
+.contact__point {
+    margin-right: 70px;
+}
+.contact__phone {
+    margin-right: 62px;
 }
 .contact__paragraph {
-    /* margin-left: 0; */
     font-size: 25px;
     letter-spacing: 0.8px;
-    margin-left: 100px;
-    background-color: green;
+    color: rgb(153, 153, 153);
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-weight: 400; 
 }
 .contact__paragraph-big {
-    /* margin-left: 0; */
     font-weight: 700;
 }
-.contact__header {
-    color: rgb(247, 247, 247);
-}
+
 
 /* FOOTER */
-
-
-/* BACKGROUND */
-
-
-
 .footer {    
     background-color: rgb(05, 05, 05);
     overflow-x: hidden;
