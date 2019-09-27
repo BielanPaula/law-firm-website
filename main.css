@@ -74,75 +74,14 @@
     color: rgb(51,51,51);
 }
 
-/* text */
-.text {
-    margin-top: 126px;
-    margin-left: 375px;
-    position: absolute;
-}
 
-/* header */
-.header {
-    font-family: "Avenir - Black";
-    font-size: 42px;
-    font-weight: 400;
-    line-height: 60.96px;
-}
-
-/* header line */
-.line {
-    width: 400px;
-    height: 3px;
-    margin-left: 0;
-    margin-top: 10px;
-}
-.line__white {
-    background-color: white;
-}
-.line__black {
-    background-color: black;
-}
-
-/* strengths fields*/
-.box {
-    display:flex;
-    flex-direction: column;
-    width: 10vw;
-    height: 40vh;
-    border-style: dotted;
-    border-color: rgb(255, 9, 50);
-}
-.box__line {
-    width: 75px;
-    height: 1px;
-    background-color: rgb(179, 179, 179);
-}
-
-/* BACKGROUND */
-.greeting,
-.introduction {
+/* GREETING */
+.greeting {
     height: 100vh;
     width: 100%;
     display: flex;
     overflow-x: hidden;
 }
-
-.fields,
-.contact {
-    background: rgb(51, 51, 51);
-    height: 100vh;
-    /* width: 100%; */
-    background-size: cover;
-    display: flex;
-    overflow-x: hidden;
-}   
-.footer {    
-    background-color: rgb(05, 05, 05);
-    overflow-x: hidden;
-}
-
-
-/* GREETING */
 .greeting__background {
     position: absolute;
     align-self: flex-end;
@@ -218,7 +157,7 @@
     background-color: black;
 }
 .greeting__paragraph {
-    font-family: schnebel-sans-me, sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-size: 25px;
     font-weight: 400;
@@ -253,6 +192,12 @@
 
 
 /* INTRODUCTION */
+.introduction {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    overflow-x: hidden;
+}
 .introduction__text {
     width: 479px;
     text-align: justify;
@@ -261,123 +206,58 @@
     margin-top: 104px;
 }
 
-
-/* FIELDS */
-.fields__text {
-    margin-top: 126px;
-    margin-left: 375px;
-    position: absolute;
-}
-.fields__header {
-    font-family: "Avenir - Black";
-    font-size: 42px;
-    font-weight: 400;
-    line-height: 60.96px;
-    color: rgb(247, 247, 247);
-}
-.fields__line {
-    width: 400px;
-    height: 3px;
-    margin-left: 0;
-    margin-top: 10px;
-}
-.fields__content {
-    margin-top: 138px;    
-    position: absolute;
-    list-style: none;
-    display:flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    /* padding: 0; */
-    /* justify-content: space-between; */
-    width: 80vw;
-    /* height: 40vh; */
-    background-color: aqua;
-    padding: 0;
-}
-        .box1 {
-            display:flex;
-            flex-direction: column;
-            width: 10vw;
-            height: 40vh;
-            border-style: dotted;
-            border-color: rgb(255, 9, 50);
-           
-        }
-        .fields__box {
-            background-color: red;
-            width: auto;
-            display:flex;
-            /* flex-direction: row; */
-            flex-wrap: wrap;
-        }
-
-        .fields__icon {
-            width: 249px;
-            height: 249px;
-            /* width: 12vw; */
-            background-color: darkgreen;
-        }
-        .fields__name {
-            /* width: 104px;
-            height: 42px; */
-            color: rgb(250, 250, 250);
-            font-family: "Myriad Pro - Semibold";
-            font-size: 19px;
-            font-weight: 400;
-            line-height: 29.2px;
-            letter-spacing: 4.75px;
-            text-align: center;
-            background-color: orange; 
-        }
-        .box__line1 {
-            width: 75px;
-            height: 1px;
-            background-color: rgb(179, 179, 179);
-        }
-
-
-
-
-
-
-/* STRENGTHS */
-.strengths {
+/* STRENGTHS FIELDS*/
+.strengths,
+.fields {
     height: 100vh;
     width: 100%;
     display: flex;
     overflow-x: hidden;
 }
+
+.fields {
+    background-color: #333333;
+}
 .strengths__mocne {
     margin-top: 120px;
 }
-.strengths__text {
+.text {
     margin-top: 120px;
 }
-.strengths__header {
-    color: #333333;
-    font-family: 'Nunito', sans-serif;
+.header {
+    font-family: schnebel-sans-me, sans-serif;
     font-size: 42px;
     line-height: 60.96px;
     text-transform: uppercase;
     letter-spacing: 16.8px;
 }
-.strengths__line {
+.strengths__header {
+    color: #333333;    
+}
+.fields__header {
+    color: #f7f7f7;
+}
+.line {
     width: 400px;
     height: 3px;
-    background-color: #b3b3b3;
     margin-left: 0;
     margin-top: 20px;
     margin-bottom: 80px;
 }
-.strengths__content {
+.strengths__line {    
+    background-color: black;
+}
+.fields__line {
+    background-color: #f7f7f7;
+}
+.content {
     display: flex;
     flex-wrap: wrap;
     height: 472px;
     padding-left: 0;
     justify-content: center;
 }
-.strengths__box {
+.box {
     width: 231.3px;
     margin: 0 50px;
     list-style: none;
@@ -399,7 +279,11 @@
     margin-bottom: 61px;
     margin-top: 50px;
 }
-.strengths__name {
+.fields__icon {
+    margin-top: 100px;
+    margin-bottom: 70px;
+}
+.name {
     text-align: center;
     margin-bottom: 0;
     font-size: 19px;
@@ -409,11 +293,20 @@
     font-family: 'Roboto', sans-serif;
     font-style: normal;
 }
-.strengths__lines {
+.fields__name {
+    color: white;
+    margin-bottom: 30px;
+}
+.lines {
     width: 75px;
     height: 1px;
+}
+.strengths__lines {
     background-color: #158483;
     margin-top: 70px;
+}
+.fields__lines {
+    background-color: #b3b3b3;
 }
 .arrow__lines {
     margin-top: 40px;
@@ -447,6 +340,14 @@
 
 
 /* CONTACT */
+.contact {
+    background: rgb(51, 51, 51);
+    height: 100vh;
+    /* width: 100%; */
+    background-size: cover;
+    display: flex;
+    overflow-x: hidden;
+}   
 .contact__content {
     height: 430px;
     display:flex;
@@ -491,6 +392,16 @@
 }
 
 /* FOOTER */
+
+
+/* BACKGROUND */
+
+
+
+.footer {    
+    background-color: rgb(05, 05, 05);
+    overflow-x: hidden;
+}
 .footer__content {
     width: 100vw;
     padding: 20px 115px 20px 115px;

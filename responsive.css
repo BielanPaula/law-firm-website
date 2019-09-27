@@ -1,15 +1,22 @@
 
 @media screen and (max-width: 1605px) {
-  .strengths {
+  .strengths,
+  .fields {
     height: 1500px;
     overflow-x: hidden;
   }
+  .greeting {
+    background-color: blue;
+  } 
 }
 
 @media screen and (max-width: 1120px) {
     .navigation {
       visibility: hidden;
     }    
+    .greeting {
+      background-color: pink;
+    }
     .greeting__text {  
       margin-left: 52px;
     }  
@@ -42,7 +49,7 @@
       width: 169px;
       height: 3px;
     }
-    .strengths__text {
+    .text {
       margin-left: 52px;
       position: absolute;
     }
@@ -57,39 +64,98 @@
   .navig__line {
     margin: 0;
   }
-  .strengths {
+  .greeting {
+    background-color: orange;
+  }
+  .strengths,
+  .fields {
     overflow-y: hidden;
     height: 2600px;
   }
 }
 
 
-@media screen and (max-width: 322px) {
-  .strengths {
+@media screen and (max-width: 422px) {
+  .greeting {
+    background-color:yellow;
+    height: auto;
+  }
+  .greeting__logo {
+    width: 42px;
+    height: 30px;
+    margin-top: 9px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+  }
+  .greeting__separation {
+    position: absolute;
+    margin-top: 55px;
+    width: 100vw;
+    height: 2px;
+    background-color: #388b7d;
+  }
+  .greeting__text {
+    margin-top: 77px;
+    margin-left: 21px;
+    margin-bottom: 10px;
+  }
+  .greeting__header {
+    font-size: 21px;
+  }
+  .greeting__name {
+    letter-spacing: 15.51px;
+  }
+  .greeting__surname {
+    letter-spacing: 3.8px;
+  }
+  .greeting__line {
+    width: 98px;
+    height: 2px;
+    margin-top: 19px;
+    margin-bottom: 16px;
+  }
+  .greeting__logo-big {
+    width: 186px;
+    height: 129px;
+    margin-left: 10px;
+    margin-top: 30px;
+    position: absolute;
+  }
+  .greeting__photo {
+    width: 187px;
+    height: 201px;
+    margin-left: 124px;
+    margin-top: 30px;
+    position: absolute;
+  }
+
+  /* .strengths */
+  .strengths,
+  .fields {
     overflow-y: hidden;
     height: 1725px;
   }
-  .strengths__text {
+  .text {
     margin-top: 65px;
     margin-right: 22px;
     margin-bottom: 10px;
   }
-  .strengths__header {
+  .header {
     font-size: 22px;
     letter-spacing: 17.6px;
     line-height: 30.48px;
   }
-  .strengths__line {
+  .line {
     width: 170px;
     height: 1px;
   }
-  .strengths__box {
+  .box {
     margin-bottom: 64px;
     margin-left: 0;
     margin-right: 0;
     width: 100%;
   }
-  .strengths__icon {
+  .icon {
     margin-top: 0;
     margin-bottom: 35px;
   }
