@@ -201,9 +201,52 @@
 .introduction__text {
     width: 479px;
     text-align: justify;
+    margin-left: 177px;
+    margin-right: 0;
 }
-.introduction__paragraph {    
+.introduction__line {
+    background-color: black;
+}
+.introduction__paragraph{    
     margin-top: 104px;
+}
+.introduction__paragraph,
+.introduction__readMore {  
+    font-family: 'Source Sans Pro', sans-serif;
+    font-style: normal;
+    font-size: 17px;
+    line-height: 25.2px;
+    letter-spacing: 0.34px;   
+}
+.introduction__courtroom {
+    position: absolute;
+    width: 457px;
+    height: 394px;
+    margin-top: 233px;
+    margin-left: 928px;
+}
+.introduction_court {
+    position: relative;
+    width: 539px;
+    height: 410px;
+    margin-top: 368px;
+}
+.introduction__B {
+    position: absolute;
+    opacity: 0.2;
+    color: #e6e6e6;
+    font-family: 'Source Sans Pro', sans-serif;
+    font-size: 600px;
+    text-transform: uppercase;
+    z-index: -1;
+    font-weight: 900;
+    margin-left: -70px;
+    margin-top: 100px;
+}
+.introduction__Marta {
+    position: absolute;
+    margin-top: 837px;
+    right: 0;
 }
 
 /* STRENGTHS FIELDS*/
@@ -213,10 +256,6 @@
     width: 100%;
     display: flex;
     overflow-x: hidden;
-}
-
-.fields {
-    background-color: #333333;
 }
 .strengths__mocne {
     margin-top: 120px;
@@ -337,11 +376,18 @@
     display: flex;
     right: 0;
 }
+.fields__background {
+    position: absolute;
+    z-index: -1;
+}
 
 
 /* CONTACT */
+.contact__background {
+    position: absolute;
+    z-index: -1;
+}
 .contact {
-    background: rgb(51, 51, 51);
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -386,6 +432,9 @@
 }
 .contact__paragraph-big {
     font-weight: 700;
+}
+.contact__map {
+    overflow-x: hidden;
 }
 
 
