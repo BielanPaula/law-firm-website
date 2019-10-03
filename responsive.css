@@ -1,3 +1,18 @@
+@media screen and (max-width: 1686px) {
+  .greeting {
+  }
+  .greeting__photo {
+    right: 0;
+  }
+  .greeting__logo-big {
+    right: 425px;
+  }
+  .greeting__scroll {
+    right: 710px;
+  }
+  
+}
+
 
 @media screen and (max-width: 1605px) {
   .strengths,
@@ -5,17 +20,28 @@
     height: 1500px;
     overflow-x: hidden;
   }
-  .greeting {
-    background-color: blue;
-  } 
 }
+
+@media screen and (max-width: 1655px) {
+  .greeting__text {
+    width: 400px;
+    margin-left: 268px;
+  }
+  .greeting__header {
+    font-size: 40px;
+  }
+  .greeting__paragraph {
+    font-size: 20px;
+    width: 400px;
+  }
+}
+
 
 @media screen and (max-width: 1120px) {
     .navigation {
       visibility: hidden;
     }    
     .greeting {
-      background-color: pink;
     }
     .greeting__text {  
       margin-left: 52px;
@@ -56,7 +82,7 @@
 }
 
 
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 780px) {
   .navigation,
   .navigation__point,
   .navigation__number,
@@ -64,9 +90,38 @@
   .navig__line {
     margin: 0;
   }
-  .greeting {
-    background-color: orange;
+  
+  .greeting__background {
+    width: 100vw;
+    height: auto;
+    margin-top: 32px;
+    background-image: linear-gradient(-88deg, #ffffff 0%, rgba(255, 255, 255, 0.28) 72%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.51;
   }
+  .greeting__logo {
+    margin-bottom: 0;
+  }
+  .greeting__text {
+    margin-top: 100px;
+  }
+  .greeting__logo-big {
+    width: 186px;
+    height: 129px;
+    margin-left: 10vw;
+    margin-top: 32px;
+    position: absolute;
+    left: 0;
+  }
+  .greeting__photo {
+    width: 187px;
+    height: 201px;
+    margin-left: 40vw;
+    margin-top: 32px;
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+
   .strengths,
   .fields {
     overflow-y: hidden;
@@ -75,17 +130,26 @@
 }
 
 
-@media screen and (max-width: 422px) {
+@media screen and (max-width: 522px) {
+  /* GREETING */
   .greeting {
-    background-color:yellow;
     height: auto;
+    justify-content: center;
+  }
+  .greeting__background {
+    width: 100vw;
+    height: auto;
+    margin-top: 32px;
+    background-image: linear-gradient(-88deg, #ffffff 0%, rgba(255, 255, 255, 0.28) 72%, rgba(255, 255, 255, 0) 100%);
+    opacity: 0.51;
   }
   .greeting__logo {
     width: 42px;
     height: 30px;
     margin-top: 9px;
-    margin-left: 10px;
+    margin-left: 20px;
     margin-bottom: 12px;
+    left: 0;
   }
   .greeting__separation {
     position: absolute;
@@ -96,11 +160,12 @@
   }
   .greeting__text {
     margin-top: 77px;
-    margin-left: 21px;
     margin-bottom: 10px;
   }
   .greeting__header {
     font-size: 21px;
+    margin-left: 0;
+    margin-right: 0;
   }
   .greeting__name {
     letter-spacing: 15.51px;
@@ -109,31 +174,62 @@
     letter-spacing: 3.8px;
   }
   .greeting__line {
-    width: 98px;
+    width: 128px;
     height: 2px;
     margin-top: 19px;
     margin-bottom: 16px;
   }
+  .greeting__paragraph {
+    margin-right: 0;
+  }
   .greeting__logo-big {
     width: 186px;
     height: 129px;
-    margin-left: 10px;
-    margin-top: 30px;
+    margin-left: 10vw;
+    margin-top: 32px;
     position: absolute;
+    left: 0;
   }
   .greeting__photo {
     width: 187px;
     height: 201px;
-    margin-left: 124px;
-    margin-top: 30px;
+    margin-left: 40vw;
+    margin-top: 32px;
     position: absolute;
+    left: 0;
+    right: 0;
+  }
+  /* INTRODUCTION */
+  .introduction {
+    height: 1100px;
+  }
+  .introduction__courtroom {
+    width: 230px;
+    height: 198px;
+    margin-left: 0;
+    margin-top: 210px;
+  }
+  .introduction__courts {
+    width: 172px;
+    height: 206px;
+    margin-top: 140px;
+  }
+  .introduction__paragraph {
+    margin-top: 369px;
+    width: 280px;
+    height: 228px;
+    font-size: 12px;
+    letter-spacing: 0.48px;
   }
 
   /* .strengths */
-  .strengths,
   .fields {
     overflow-y: hidden;
-    height: 1725px;
+    height: 1950px;
+  }
+  .strengths {
+    overflow-y: hidden;
+    height: 1850px;
   }
   .text {
     margin-top: 65px;
@@ -163,5 +259,66 @@
     font-size: 17px;
     letter-spacing: 0.34px;
     margin-top: 33px;
+  }
+  .strengths__lines {
+    margin-bottom: 20px;
+    margin-top: 20px;
+  }
+  .strengths__icon {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .fields__icon {
+    margin-top: 0;
+    margin-bottom: 20px;
+  }
+  .fields__background {
+    height: 1950px;
+  }
+  /* CONTACT */
+  .contact {
+    height: 2000px;
+    overflow-y: hidden;
+    display: column;
+  }
+  .contact__background {
+    position: absolute;
+    width: 100vw;
+    height: 2000px;   
+    background-image: url(images/contactBackground.png);
+  }
+  .contact__line {
+    margin-bottom: 50px;
+  }
+  .contact__box {
+    width: 283px;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .contact__data {
+    margin-top: 25px;
+    margin-bottom: 40px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .contact__paragraph {
+    margin-top: 20px;
+  }
+  .contact__icon {
+    margin: 0;
+  }
+  .contact__map {
+    margin-top: 1000px;
+    margin-left: 0;
+  }
+  /* FOOTER */
+  .footer__content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .footer__logo {
+    margin-left: 50px;
+    margin-right: 50px;
   }
 }

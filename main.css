@@ -82,6 +82,13 @@
     display: flex;
     overflow-x: hidden;
 }
+/* .greeting__background {
+    width: 100vw;  
+    background-color: pink; 
+    background-image: url(images/mountains.png);
+    margin: 0;
+    /* z-index: -1;
+  }
 .greeting__background {
     position: absolute;
     align-self: flex-end;
@@ -89,7 +96,7 @@
     height: 100vh;
     width: auto;
     overflow-x: hidden;
-}
+} */
 .greeting__logo {
     position: absolute;
     margin-left: 374px;
@@ -385,8 +392,11 @@
 /* CONTACT */
 .contact__background {
     position: absolute;
+    width: 100vw;
+    height: 2000px;   
+    background-image: url(images/contactBackground.png);
     z-index: -1;
-}
+  }
 .contact {
     height: 100vh;
     background-size: cover;
