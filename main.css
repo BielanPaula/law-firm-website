@@ -5,12 +5,16 @@
 
 /* NAVIGATION */
 .navigation {
+    /* pozycja do usunięcia */
+    /* position: absolute; */
     display:flex;
     flex-direction: column;
     height: 462px;
+    margin-top: auto;
     margin-left: 49px;
     margin-right: 140px;
     width: 72px;
+    z-index: 1;
 }
 .navigation__main {
     display:flex;
@@ -82,21 +86,17 @@
     display: flex;
     overflow-x: hidden;
 }
-/* .greeting__background {
-    width: 100vw;  
-    background-color: pink; 
-    background-image: url(images/mountains.png);
-    margin: 0;
-    /* z-index: -1;
-  }
 .greeting__background {
     position: absolute;
-    align-self: flex-end;
+    width: 100%; 
+    height: 100vh; 
+    bottom: 0;
+    background-image: url(images/mountains.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
     z-index: -1;
-    height: 100vh;
-    width: auto;
-    overflow-x: hidden;
-} */
+  }
 .greeting__logo {
     position: absolute;
     margin-left: 374px;
@@ -384,16 +384,27 @@
     right: 0;
 }
 .fields__background {
+    background-image: url(images/fieldsBackground.png);
     position: absolute;
+    width: 100%; 
+    height: 100vh; 
+    bottom: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    top: 400vh;
     z-index: -1;
 }
 
 
 /* CONTACT */
 .contact__background {
-    position: absolute;
-    width: 100vw;
-    height: 2000px;   
+        position: absolute;
+        width: 100%; 
+        height: 100vh; 
+        bottom: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        top: 800vh;
     background-image: url(images/contactBackground.png);
     z-index: -1;
   }
