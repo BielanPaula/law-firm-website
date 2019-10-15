@@ -4,9 +4,15 @@
 }
 
 /* NAVIGATION */
+.navigation__1 {
+    margin: 0;
+    width: 20%;
+    min-width: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 .navigation {
-    /* pozycja do usunięcia */
-    /* position: absolute; */
     display:flex;
     flex-direction: column;
     height: 462px;
@@ -81,58 +87,46 @@
 
 /* GREETING */
 .greeting {
-    height: 100vh;
     width: 100%;
+    min-height: 100vh;
     display: flex;
-    overflow-x: hidden;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
-.greeting__background {
-    position: absolute;
+.greeting {
     width: 100%; 
-    height: 100vh; 
-    bottom: 0;
-    background-image: url(images/mountains.png);
+    min-height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    margin: 0;
-    z-index: -1;
-  }
-.greeting__logo {
-    position: absolute;
-    margin-left: 374px;
-    margin-top: 37px;
-    margin-bottom: 141px;
-    width: 97px;
-    height: 69px;
+    background-image: url(images/mountains.png);
+    z-index: -2;
 }
-.greeting__logo-big {
-    position: absolute;
-    align-self: flex-end;
-    margin-left: 662px;
-    width: 594px;
-    height: 412px;
+.ff {
+    width: 50%;
+    min-width: 750px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
 }
-.greeting__scroll {
-    position: absolute;
-    align-self: flex-end;
-    margin-left: 948px;
-    width: 25px;
-    height: 39px;
+.greeting__logoBig {
+    width: 60%;
+    margin-bottom: 0;
 }
 .greeting__photo {
-    position: absolute;
-    align-self: flex-end;
-    margin-left: 1040px;
-    width: 629px;
-    height: 674px;
+    width: 30%;
+    margin-bottom: 0;
+}
+.greeting__logo {
+    margin-left: 0;
+    margin-bottom: 5vh;
+    margin-top: 2vh;
 }
 .greeting__text {    
-    margin-top: 247px;
-    margin-left: 368px;    
-    position: absolute;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    margin-top:0;
 }
 .greeting__header {
     font-family: schnebel-sans-me, sans-serif;
@@ -140,6 +134,7 @@
     font-size: 60px;
     font-weight: 400;
     text-transform: uppercase;
+    margin-left: 0;
 }
 .greeting__name {
     font-family: schnebel-sans-me, sans-serif;
@@ -157,11 +152,9 @@
     width: 282px;
     height: 5px;
     background-color: black;
-    margin-top: 55px;
+    margin-top: 2vh;
     margin-left: 0;
-    margin-bottom: 55px;
-    margin-top: 38px;
-    background-color: black;
+    margin-bottom: 3vh;
 }
 .greeting__paragraph {
     font-family: 'Source Sans Pro', sans-serif;
@@ -169,106 +162,100 @@
     font-size: 25px;
     font-weight: 400;
     line-height: 30.74px;
-    width: 670px;
-    height: 178px;
-    margin-left: 0;
+    width: 100%;
     text-align: justify;
 }
-.phone {
-    position: absolute;
-    margin-top: 137px;
-    display: flex;
-    right: 0;
-    font-family: nunito, sans-serif;
-    font-weight: 400;
-    font-style: normal;
-}
-.phone__shape {
-    position: absolute;
-}
-.phone__number {
-    position: relative;
-    margin-top: 20px;
-    margin-left: 200px;
-    width: 202px;
-    color: #ffffff;
-    font-size: 22px;
-    font-weight: 500;
-    line-height: 95.17px;
-}
-
 
 /* INTRODUCTION */
 .introduction {
-    height: 100vh;
-    width: 100%;
+    min-height: 100vh;
     display: flex;
-    overflow-x: hidden;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+.introduction {
+    width: 100%; 
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/aboutMeBackground.png);
+    z-index: -1;
+}
+.introduction__container {
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin: 0;
+    justify-content: center;
 }
 .introduction__text {
-    width: 479px;
-    text-align: justify;
-    margin-left: 177px;
-    margin-right: 0;
+    width: 20%;
+    min-width: 490px;
+    display: flex;
+    flex-direction: column;
+}
+.introduction__header {
+    margin-left: 0;
 }
 .introduction__line {
-    background-color: black;
+    background: black;
 }
-.introduction__paragraph{    
-    margin-top: 104px;
-}
-.introduction__paragraph,
-.introduction__readMore {  
+.introduction__paragraph {
     font-family: 'Source Sans Pro', sans-serif;
     font-style: normal;
     font-size: 17px;
     line-height: 25.2px;
-    letter-spacing: 0.34px;   
+    letter-spacing: 0.34px;
+    text-align: justify;
 }
-.introduction__courtroom {
-    position: absolute;
-    width: 457px;
-    height: 394px;
-    margin-top: 233px;
-    margin-left: 928px;
+.introduction__picture {
+    width: 40%;
+    min-width: 450px;
 }
-.introduction_court {
-    position: relative;
-    width: 539px;
-    height: 410px;
-    margin-top: 368px;
-}
-.introduction__B {
-    position: absolute;
-    opacity: 0.2;
-    color: #e6e6e6;
-    font-family: 'Source Sans Pro', sans-serif;
-    font-size: 600px;
-    text-transform: uppercase;
-    z-index: -1;
-    font-weight: 900;
-    margin-left: -70px;
-    margin-top: 100px;
-}
-.introduction__Marta {
-    position: absolute;
-    margin-top: 837px;
-    right: 0;
+.introduction__court {
+    width: 100%;
+    height: auto;
 }
 
 /* STRENGTHS FIELDS*/
-.strengths,
-.fields {
-    height: 100vh;
-    width: 100%;
+.fields,
+.strengths {
+    min-height: 100vh;
     display: flex;
+    flex-direction: row;
     overflow-x: hidden;
 }
-.strengths__mocne {
-    margin-top: 120px;
+.strengths {
+    width: 100%; 
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/strong.png);
+    z-index: -1;
+}
+.fields {
+    width: 100%; 
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-image: url(images/fieldsBackground.png);
+    z-index: -1;
 }
 .text {
     margin-top: 120px;
+}
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.box {
+    width: 231.3px;
+    margin: 0 50px;
+    list-style: none;
+    text-align: center;
 }
 .header {
     font-family: schnebel-sans-me, sans-serif;
@@ -295,20 +282,7 @@
 }
 .fields__line {
     background-color: #f7f7f7;
-}
-.content {
-    display: flex;
-    flex-wrap: wrap;
-    height: 472px;
-    padding-left: 0;
-    justify-content: center;
-}
-.box {
-    width: 231.3px;
-    margin: 0 50px;
-    list-style: none;
-    text-align: center;
-}
+} 
 .strengths__hand {
     margin-bottom: 75px;
     margin-top: 50px;
@@ -383,41 +357,50 @@
     display: flex;
     right: 0;
 }
-.fields__background {
-    background-image: url(images/fieldsBackground.png);
-    position: absolute;
-    width: 100%; 
-    height: 100vh; 
-    bottom: 0;
-    background-size: cover;
-    background-repeat: no-repeat;
-    top: 400vh;
-    z-index: -1;
+
+.strengths,
+.fields {
+    min-height: 100vh;
+    display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
+} 
+.fields {
+    position: relative;
+}
+.strengths__mocne {
+    margin-top: 120px;
 }
 
 
 /* CONTACT */
-.contact__background {
-        position: absolute;
-        width: 100%; 
-        height: 100vh; 
-        bottom: 0;
-        background-size: cover;
-        background-repeat: no-repeat;
-        top: 800vh;
+.contact {
+    width: 100%; 
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
     background-image: url(images/contactBackground.png);
     z-index: -1;
-  }
-.contact {
-    height: 100vh;
-    background-size: cover;
+} 
+.contact__inside {
+    min-height: 100vh;
     display: flex;
+    flex-direction: row;
     overflow-x: hidden;
 }
+.contact__contents {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 0;
+}
 .contact__text {
-    width: 400px;
-    margin-left: 177px;
-    margin-right: 141px;
+    width: 50%;
+    min-width: 400px;
+}
+.contact__map {
+    width: 50%;
 }
 .contact__line{
     background-color: rgb(153, 153, 153);
@@ -453,9 +436,6 @@
 }
 .contact__paragraph-big {
     font-weight: 700;
-}
-.contact__map {
-    overflow-x: hidden;
 }
 
 
