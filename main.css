@@ -90,8 +90,6 @@
     width: 100%;
     min-height: 100vh;
     display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 .greeting {
     width: 100%; 
@@ -170,8 +168,6 @@
 .introduction {
     min-height: 100vh;
     display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
 }
 .introduction {
     width: 100%; 
@@ -182,7 +178,6 @@
     z-index: -1;
 }
 .introduction__container {
-    width: 80%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -256,6 +251,9 @@
     margin: 0 50px;
     list-style: none;
     text-align: center;
+}
+.strengths__box {
+    margin-bottom: 40px;
 }
 .header {
     font-family: schnebel-sans-me, sans-serif;
@@ -351,12 +349,6 @@
     padding-top: 0;
     margin-top: 90px;    
 }
-.strengths__mocne {
-    position: absolute;
-    z-index: -1;
-    display: flex;
-    right: 0;
-}
 
 .strengths,
 .fields {
@@ -367,9 +359,6 @@
 } 
 .fields {
     position: relative;
-}
-.strengths__mocne {
-    margin-top: 120px;
 }
 
 

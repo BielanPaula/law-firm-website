@@ -1,5 +1,39 @@
+@media screen and (max-width: 1461px) { 
+    .ff {
+        position: relative;
+    }
+    .greeting__photo {
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        width: 400px;
+        height: auto;
+    }
+    .greeting__logoBig {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+    }
+}
+
 @media screen and (max-width: 1116px) { 
     .contact__map {
         width: 100vw;
     }
+}
+@media screen and (max-width: 990px) { 
+    .navigation,
+    .navigation__1 {
+        display: none;
+    }
+    .fields__header,
+    .strengths__header,
+    .fields__line,
+    .strengths__line {
+        margin-left: 60px;
+    }
+}
+@media screen and (max-width: 320px) { 
+    
+    
 }
