@@ -2,6 +2,9 @@
     box-sizing: border-box;
     margin: auto;
 }
+body {
+    overflow-x: hidden;
+  }
 
 /* NAVIGATION */
 .navigation__1 {
@@ -99,7 +102,7 @@
     background-image: url(images/mountains.png);
     z-index: -2;
 }
-.ff {
+.greeting__content {
     width: 50%;
     min-width: 750px;
     min-height: 100vh;
@@ -209,7 +212,7 @@
     min-width: 450px;
 }
 .introduction__court {
-    width: 100%;
+    width: 50%;
     height: auto;
 }
 
@@ -434,8 +437,8 @@
     overflow-x: hidden;
 }
 .footer__content {
-    width: 100vw;
-    padding: 20px 115px 20px 115px;
+    min-width: 100vw;
+    padding: 2% 5% 2% 5%;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -443,8 +446,11 @@
     font-size: 15px;
     letter-spacing: 0.38px;
 }
-.footer__text,
 .footer__logo {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.footer__text {
     margin: 0;
 }
 .footer__name {
